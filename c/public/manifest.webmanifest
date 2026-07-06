@@ -1,0 +1,15 @@
+{
+  "name": "Riddle Diary",
+  "short_name": "Riddle",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#efe2c2",
+  "theme_color": "#21150f",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

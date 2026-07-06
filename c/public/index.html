@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#21150f">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="icon" href="/icon.svg">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Riddle Diary</title>
+  </head>
+  <body>
+    <main class="app">
+      <section class="diary" aria-label="Riddle Diary">
+        <header class="topbar">
+          <div>
+            <h1>Riddle Diary</h1>
+            <p id="status">Ready</p>
+          </div>
+          <div class="actions">
+            <button id="clearBtn" type="button" title="Clear">
+              <span aria-hidden="true">×</span>
+            </button>
+            <button id="sendBtn" type="button">Ask</button>
+          </div>
+        </header>
+
+        <div class="pages">
+          <section class="page input-page">
+            <canvas id="inkCanvas" aria-label="Ink area"></canvas>
+            <textarea
+              id="promptInput"
+              rows="6"
+              autocomplete="off"
+              autocapitalize="sentences"
+              spellcheck="false"
+              placeholder="Use Apple Pencil Scribble here, or type your question..."
+            ></textarea>
+          </section>
+
+          <section class="page reply-page">
+            <div id="replyText" class="reply" aria-live="polite"></div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
